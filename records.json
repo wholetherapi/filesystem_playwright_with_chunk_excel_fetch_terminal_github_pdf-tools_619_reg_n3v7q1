@@ -1,0 +1,51 @@
+{
+  "schema_version": 2,
+  "programme": "Ravensworth Instrumentation Consortium — Certification Records",
+  "last_updated": "2026-09-30",
+  "records": [
+    {
+      "track_id": "SLC-02",
+      "track_name": "Static Load Cells",
+      "division": "Industrial Monitoring Division",
+      "status": "certified",
+      "minimum_field_validation_hours": 96,
+      "source_url": "https://raw.githubusercontent.com/wholetherapi/filesystem_playwright_with_chunk_excel_fetch_terminal_github_pdf-tools_619_hb_n3v7q1/main/handbook/pages/profiles/static-load-cells.md",
+      "implementation": {
+        "package": "slc-conformance-kit",
+        "spec_id": "RIC-SLC-1.9",
+        "monthly_downloads": 22400
+      },
+      "excluded_candidates": [
+        {
+          "package": "loadcell-pro",
+          "reason": "Implements the vendor profile LC-PRO-2, not RIC-SLC-1.9."
+        },
+        {
+          "package": "slc-analyzer",
+          "reason": "Analysis-only tooling; contains no conformance implementation."
+        }
+      ],
+      "updated_at": "2026-07-22"
+    },
+    {
+      "track_id": "FS-11",
+      "track_name": "Fluid Systems — Inline Flow Meters",
+      "division": "Fluid Systems Division",
+      "status": "certified",
+      "minimum_field_validation_hours": 68,
+      "source_url": "https://raw.githubusercontent.com/wholetherapi/filesystem_playwright_with_chunk_excel_fetch_terminal_github_pdf-tools_619_hb_n3v7q1/main/handbook/pages/profiles/fluid-systems-inline-flow-meters.md",
+      "implementation": {
+        "package": "flowmeter-ric-kit",
+        "spec_id": "RIC-FS-2.2",
+        "monthly_downloads": 31500
+      },
+      "excluded_candidates": [
+        {
+          "package": "flowbench",
+          "reason": "Bench simulation harness; does not implement RIC-FS-2.2."
+        }
+      ],
+      "updated_at": "2026-09-04"
+    }
+  ]
+}
