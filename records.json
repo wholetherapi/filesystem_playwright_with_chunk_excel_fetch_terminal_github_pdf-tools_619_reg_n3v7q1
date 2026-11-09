@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "programme": "Ravensworth Instrumentation Consortium — Certification Records",
-  "last_updated": "2026-09-30",
+  "last_updated": "2026-11-09",
   "records": [
     {
       "track_id": "SLC-02",
@@ -46,6 +46,42 @@
         }
       ],
       "updated_at": "2026-09-04"
+    },
+    {
+      "track_id": "RE-PD-04",
+      "track_name": "Rotating Equipment — Predictive Diagnostics",
+      "division": "Industrial Monitoring Division",
+      "status": "certified",
+      "minimum_field_validation_hours": 128,
+      "source_url": "https://raw.githubusercontent.com/wholetherapi/filesystem_playwright_with_chunk_excel_fetch_terminal_github_pdf-tools_619_hb_n3v7q1/main/handbook/pages/profiles/rotating-equipment-predictive-diagnostics.md",
+      "implementation": {
+        "package": "ric-pba-reference",
+        "spec_id": "RIC-PBA-2.4",
+        "monthly_downloads": 41000
+      },
+      "excluded_candidates": [
+        {
+          "package": "pba-attention-kit",
+          "reason": "Implements PBA-Attention (research specification PBA-ATT-2601), not RIC-PBA-2.4."
+        },
+        {
+          "package": "ric-pba-legacy-sdk",
+          "reason": "Official SDK for the superseded RIC-PBA-2.1 profile; not equivalent to RIC-PBA-2.4."
+        },
+        {
+          "package": "pba-unified-toolkit",
+          "reason": "Multi-variant toolbox with no RIC-PBA-2.4 conformance statement."
+        },
+        {
+          "package": "pba-forecast-lite",
+          "reason": "Implements the vendor variant PBA-Forecast Lite 1.4, not RIC-PBA-2.4."
+        },
+        {
+          "package": "pba-timeseries",
+          "reason": "Unrelated time-series library named after its author's initials; implements no RIC profile."
+        }
+      ],
+      "updated_at": "2026-11-09"
     }
   ]
 }
